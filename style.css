@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    117deg,
+    rgba(79, 97, 187, 1) 14%,
+    rgba(64, 71, 138, 1) 47%,
+    rgba(55, 55, 107, 1) 96%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 600px;
+  /* border: 1px solid black; */
+  padding: 20px;
+}
+
+.wrapper .header h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.wrapper .header p {
+  color: rgb(213, 213, 213);
+  margin-top: 10px;
+}
+
+.wrapper .header p a {
+  text-decoration: none;
+  color: rgb(115, 136, 217);
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.input-field {
+  position: relative;
+  margin-top: 20px;
+}
+
+.input-field .input-label {
+  position: absolute;
+  font-size: 12px;
+  top: 10px;
+  left: 15px;
+  color: rgb(213, 213, 213);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.form .row .input-text {
+  width: 280px;
+}
+
+.input-text {
+  padding: 30px 0px 15px 15px;
+  width: 100%;
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  outline: hidden #1e8cee;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+.input-text:focus {
+  outline: solid #1e8cee;
+  box-shadow: 5px 5px 15px #1e8cee;
+}
+
+.input-text:hover {
+  box-shadow: 5px 5px 15px #1e8cee;
+}
+
+.input-text:focus ~ .input-label {
+  top: -15px;
+  background-color: #1e8cee;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.input-button {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.submit-btn {
+  border: none;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #1e8cee;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  font-weight: 400;
+}
+
+.submit-btn:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #1e8cee;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
